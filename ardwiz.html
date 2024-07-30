@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrique Val's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav" style="background-color: rgb(0, 0, 0, 0.3);">
+        <div class="logo">Enrique Val</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#profile">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#games">Games</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <nav id="hamburger-nav">        
+        <div class="logo">Enrique Val</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toogleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#profile" onclick="toogleMenu()">Home</a></li>
+                <li><a href="index.html#about" onclick="toogleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toogleMenu()">Experience</a></li>
+                <li><a href="index.html#games" onclick="toogleMenu()">Games</a></li>
+                <li><a href="index.html#contact" onclick="toogleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="game-container">
+        <div class="game-header-container">
+            <img
+                src="./assets/LOGO_AARDWYZZ_INVERTIDO.png"
+                alt="Aard and Wyzz Logo"
+                class="AW-logo"
+            />
+            <span class="game-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam voluptates assumenda cum labore. Nulla ex adipisci soluta accusamus iure necessitatibus eum. Exercitationem quos blanditiis perspiciatis eum! Molestias, tempora et.</span>      
+        </div>        
+    </div>
+    <div class="game-full-description">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
+        </p>
+    </div>
+    <div class="game-trailer">
+        <iframe width="960" height="540"
+            src="https://www.youtube.com/watch?v=lkEnyQfBJ-Y">
+        </iframe>
+    </div>
+    <footer>
+        <p>Copyright &#169; 2024 Enrique Val Asensio. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
