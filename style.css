@@ -555,7 +555,8 @@ footer p {
     margin-top: 2rem;
 }
 
-.game-full-description {
+.game-full-description,
+.game-features {
     margin: 8rem;
 }
 
