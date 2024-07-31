@@ -6,11 +6,12 @@
     <title>Enrique Val's Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaqueries.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Enrique Val</div>
+        <div class="logo"><a href="#profile">Enrique Val</a></div>
         <div>
             <ul class="nav-links">
                 <li><a href="#profile" class="active">Home</a></li>
@@ -22,7 +23,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">        
-        <div class="logo">Enrique Val</div>
+        <div class="logo"><a href="#profile">Enrique Val</a></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toogleMenu()">
                 <span></span>
@@ -238,7 +239,7 @@
                     </div>
                     <div class="details-container">
                         <h2 class="experience-sub-title">Teamwork Skills</h2>
-                        <div class="article-container">
+                        <div class="article-container soft-skills-container">
                             <article>
                                 <img
                                     src="./assets/checkmark.png"
@@ -247,8 +248,8 @@
                                     ="icon"
                                 />
                                 <div class="skill-container">
-                                    <h3>HTML</h3>
-                                    <p>Intermediate</p>
+                                    <h3>Agile Methologies</h3>
+                                    <p>Scrum & Kanban</p>
                                 </div>
                             </article>
                             <article>
@@ -259,8 +260,7 @@
                                     ="icon"
                                 />
                                 <div class="skill-container">
-                                    <h3>CSS</h3>
-                                    <p>Basic</p>
+                                    <h3>Tasks Planification</h3>
                                 </div>
                             </article>
                             <article>
@@ -271,8 +271,7 @@
                                     ="icon"
                                 />
                                 <div class="skill-container">
-                                    <h3>Java</h3>
-                                    <p>Experienced</p>
+                                    <h3>Communication</h3>
                                 </div>
                             </article>
                             <article>
@@ -283,8 +282,7 @@
                                     ="icon"
                                 />
                                 <div class="skill-container">
-                                    <h3>C++</h3>
-                                    <p>Experienced</p>
+                                    <h3>Leadership</h3>
                                 </div>
                             </article>
                             <article>
@@ -295,8 +293,7 @@
                                     ="icon"
                                 />
                                 <div class="skill-container">
-                                    <h3>C#</h3>
-                                    <p>Experienced</p>
+                                    <h3>Adaptability</h3>
                                 </div>
                             </article>
                             <article>
@@ -307,14 +304,28 @@
                                     ="icon"
                                 />
                                 <div class="skill-container">
-                                    <h3>Puterio</h3>
-                                    <p>Experienced</p>
+                                    <h3>Problem Solving</h3>
                                 </div>
                             </article>
                         </div>
                     </div>
+                </div> 
+                <div class="recommendation-container">
+                    <embed 
+                        src="./assets/carta_recomendacion_enrique.pdf" 
+                        width="750" height="900" 
+                        type="application/pdf">
+
+                    <div class="recommendation-text-container">
+                        <h2 class="recommendation-title">LETTER OF RECOMMENDATION</h2>
+                        <p class="recommendation-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dolore vitae unde optio explicabo, maiores deserunt iste saepe tempore dolorum at itaque ipsa. Laboriosam suscipit, in eaque aperiam alias dolores?
+                        </p>
+                    </div>
                 </div>
-            </div>
+
+            </div>         
+
             <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
             onclick="location.href='#games'" />
         </div>

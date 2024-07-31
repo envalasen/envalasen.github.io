@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+.game-body {
+    background-color: rgb(192, 203, 209);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -77,10 +81,6 @@ a:hover, .active {
 
 .logo {
     font-size: 2rem;
-}
-
-.logo:hover {
-    cursor: default;
 }
 
 /* HAMBURGER MENU */
@@ -245,7 +245,7 @@ section:nth-child(even){
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
-    border-radius: 2rem;;
+    border-radius: 2rem;
 }
 
 .btn-color-1,
@@ -332,6 +332,7 @@ section:nth-child(even){
 
 #experience {
     position: relative;
+    height: fit-content;
 }
 
 .experience-sub-title {
@@ -356,9 +357,10 @@ section:nth-child(even){
     justify-content: space-around;
 }
 
+
 article {
     display: flex;
-    width: 10rem;
+    width: 12rem;
     justify-content: space-around;
     gap: 0.5rem;
 }
@@ -372,6 +374,39 @@ article .icon {
     width: 100%;
 }
 
+.soft-skills-container article{
+    align-items: center;
+    width: 15rem;
+}
+
+.recommendation-container {
+    margin: 3rem 0;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.recommendation-text-container {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.recommendation-title {
+    font-size: 42px;
+}
+
+.recommendation-text {
+    text-align: justify;
+}
+
+.pdf-icon {
+    width: 100px;
+    height: auto;
+}
 
 /* GAMES SECTION */
 
@@ -544,6 +579,7 @@ footer p {
 }
 
 .AW-logo {
+    margin-top: 5rem;
     width: 600px;
     height: auto;
 }
@@ -555,12 +591,141 @@ footer p {
     margin-top: 2rem;
 }
 
+.game-section-title {
+    text-align: center;
+    padding: 0 3rem 3rem;
+    color: white;
+    font-size: 96px;
+}
+
 .game-full-description,
 .game-features {
-    margin: 8rem;
+    margin: 8rem 8rem 5rem 8rem;
 }
 
 .game-trailer {
     display: flex;
+    justify-content: center;   
+   
+}
+
+.game-trailer iframe{
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1.5rem;
+}
+
+
+.features-slider-container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    margin: 0 auto;    
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    position: absolute;
+    display: flex;
+    column-gap: 2rem;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    -ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.slider-nav a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 300ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.steam-btn-container {
+    display: flex;
+    width: 600px;
     justify-content: center;
+    margin-top: 3rem;
+}
+
+.steam-btn {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    align-items: center;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 18px;
+    width: 175px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    border-radius: 2rem;
+}
+
+.steam-btn:hover {
+    cursor: pointer;
+    background: rgb(206, 206, 206);
+}
+
+.steam-icon {
+    width: 50px;
+    height: auto;
+}
+
+.down-arrow-container {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.down-arrow-container:hover {
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+}
+
+.down-arrow {
+    /* padding: 20px 17px; */
+    /* max-width: 70px;
+    height: 40px; */
+    width: 100%;
+    height: auto;
+    fill: white;
 }

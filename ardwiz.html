@@ -6,11 +6,20 @@
     <title>Enrique Val's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+    <!--
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script
+          src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script
+          src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    -->
 </head>
-<body>
+<body class="game-body">
     <nav id="desktop-nav" style="background-color: rgb(0, 0, 0, 0.3);">
-        <div class="logo">Enrique Val</div>
+        <div class="logo"><a href="index.html#profile">Enrique Val</a></div>
         <div>
             <ul class="nav-links">
                 <li><a href="index.html#profile">Home</a></li>
@@ -23,7 +32,7 @@
 
     </nav>
     <nav id="hamburger-nav">        
-        <div class="logo">Enrique Val</div>
+        <div class="logo"><a href="index.html#profile">Enrique Val</a></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toogleMenu()">
                 <span></span>
@@ -46,33 +55,137 @@
                 alt="Aard and Wyzz Logo"
                 class="AW-logo"
             />
-            <span class="game-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam voluptates assumenda cum labore. Nulla ex adipisci soluta accusamus iure necessitatibus eum. Exercitationem quos blanditiis perspiciatis eum! Molestias, tempora et.</span>      
+            <span class="game-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam voluptates assumenda cum labore. Nulla ex adipisci soluta accusamus iure necessitatibus eum. Exercitationem quos blanditiis perspiciatis eum! Molestias, tempora et.</span>
+            <div class="btn-container steam-btn-container">
+                <button class="steam-btn"
+                    onclick="location.href='https://store.steampowered.com/app/2984220/Aard_and_Wyzz_The_rise_of_minions/'"
+                > 
+                <!-- <img
+                    src="./assets/bxl-steam.svg"
+                    alt="Steam Icon"
+                    class="steam-icon"
+                /> -->
+                    <box-icon name='steam' type='logo' color='#ffffff' class="steam-icon"></box-icon>
+                    Steam
+                </button>
+            </div>
+            <div class="down-arrow-container">
+                <!-- <img
+                    src="./assets/bx-chevron-down.svg"
+                    alt="Down Arrow"
+                    class="down-arrow"
+                    onclick="location.href='#AW-info'"
+
+                /> -->
+                <box-icon name='chevron-down' 
+                    color='#ffffff' 
+                    class="down-arrow"
+                    onclick="location.href='#AW-info'"
+                >
+                </box-icon>
+            </div>      
         </div>        
     </div>
-    <div class="game-full-description">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
-        </p>
-    </div>
-    <div class="game-trailer">
-        <iframe width="960" height="540"
-            src="https://www.youtube.com/embed/lkEnyQfBJ-Y">
-        </iframe>
-    </div>
-    <div class="game-features">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
-        </p>
+    <div id="AW-info">
+        <div class="game-full-description">
+            <h1 class="game-section-title">DESCRIPTION</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
+            </p>
+        </div>
+        <div class="game-trailer">
+            <iframe width="960" height="540"
+                src="https://www.youtube.com/embed/lkEnyQfBJ-Y">
+            </iframe>
+        </div>
+        <div class="game-features">
+            <h1 class="game-section-title">FEATURES</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nisi veritatis necessitatibus temporibus ex provident, impedit, libero corporis iure quasi quidem at odit recusandae eligendi voluptatum quae quibusdam autem. Facere!
+            </p>
+        </div>
+        <div class="features-slider-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img
+                        id="slide-1"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 1.png"
+                    />
+                    <img
+                        id="slide-2"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 2.png"
+                    />
+                    <img
+                        id="slide-3"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 3.png"
+                    />
+                    <img
+                        id="slide-4"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 4.png"
+                    />
+                    <img
+                        id="slide-5"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 5.png"
+                    />
+                    <img
+                        id="slide-6"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 6.png"
+                    />
+                    <img
+                        id="slide-7"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 7.png"
+                    />
+                    <img
+                        id="slide-8"
+                        class="slide"
+                        src="./assets/A&W - Screenshot 8.png"
+                    />
+                </div>
+                <div class="slider-nav">
+                    <!-- <box-icon name='right-arrow-alt' class="next" color="#ffffff" onclick="nextSlide()"></box-icon>
+                    <box-icon name='left-arrow-alt' class="prev" color="#ffffff" onclick="prevSlide()"></box-icon> -->
+
+                    <a href="#slide-1" id="1"></a>
+                    <a href="#slide-2" id="2"></a>
+                    <a href="#slide-3" id="3"></a>
+                    <a href="#slide-4" id="4"></a>
+                    <a href="#slide-5" id="5"></a>
+                    <a href="#slide-6" id="6"></a>
+                    <a href="#slide-7" id="7"></a>
+                    <a href="#slide-8" id="8"></a>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <p>Copyright &#169; 2024 Enrique Val Asensio. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <!--
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            mode: 'fade',
+            randomStart: true,
+            slideMargin: 0,
+            auto: true,
+          });
+        });
+      
+      </script>
+    -->
 </body>
 </html>
