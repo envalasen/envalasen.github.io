@@ -13,12 +13,36 @@
     }
     #hamburger-nav {
         display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        top: 0;
+        box-shadow: 0px 0px 5px 1px rgb(43, 43, 43);
+        /* background: rgb(75, 132, 207); */
+        background-color: #d3d3d3;
+        opacity: 70%;
+        overflow: visible;   
+    }
+    .logo {
+        font-weight: 600;
+    }
+    .menu-links {
+        background-color: rgb(192, 203, 209);
     }
     #experience, .experience-details-container {
         margin-top: 2rem;
+        
     }
     #profile, .section-container{
         display: block;
+    }
+
+    #profile {
+        height: 126vh;
+    }
+
+    #profile .section_pic-container{
+        justify-content: center;
     }
 
     .arrow {
@@ -28,7 +52,7 @@
         height: fit-content;
     }
     section {
-        margin: 0 5%;
+        margin-bottom: 3rem;
     }
     .section_pic-container {
         width: 275px;
@@ -37,6 +61,55 @@
     }
     .about-containers {
         margin-top: 0;
+    }
+
+    .recommendation-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .game-container {
+        height: 100%;
+        position: relative;
+    }
+
+    .game-header-container {
+        font-size: 10px;
+        padding-left: 2.5rem;
+    }
+
+    .AW-logo,
+    .game-short-description,
+    .steam-btn-container {
+        width: 350px;
+    }
+
+    .steam-btn {
+        width: 100px;
+        font-size: 10px;
+    }
+    .steam-icon {
+        width: 30px;
+    }
+
+    .down-arrow-container {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 3rem;
+    }
+
+    .game-full-description,
+    .game-features {
+        margin: 5rem 5rem 3rem 5rem;
+        text-align: justify;
+    }
+
+    .game-trailer iframe,
+    .slider-wrapper {
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -90,4 +163,3 @@
         text-align: justify;
     }
 }
-

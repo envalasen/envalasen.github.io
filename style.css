@@ -709,8 +709,8 @@ footer p {
     width: 75px;
     height: 75px;
     align-self: center;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     background: transparent;
     border: 2px solid white;
     border-radius: 50%;

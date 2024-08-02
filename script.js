@@ -37,7 +37,9 @@ function nextSlide() {
     const slides = document.querySelectorAll('.slide');
     const slider = document.querySelector('.slider');
     if (index >= slides.length) {
+        slides[currentSlide].style.transform = `translateX(0%)`;        
         currentSlide = 0
+        return;
     }
     else if (index < 0) {
         currentSlide = slides.length -1;
