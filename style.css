@@ -16,8 +16,12 @@ body {
     overflow-x: hidden;
 }
 
-.game-body {
+#AW-body {
     background-color: rgb(192, 203, 209);
+}
+
+#Pathogenesis-body {
+    background-color: rgba(104, 8, 8, 0.5);
 }
 
 html {
@@ -550,9 +554,18 @@ footer p {
 
 .game-container {    
     display: flex;
-    height: 100%;
-    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/ardwiz.png);
+    height: 100%;    
+    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    url(./assets/ardwiz.png);
     background-size: cover;
+}
+
+.patho-background-container {
+    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/Pathogenesis\ -\ Screenshot1.png);
+}
+
+.th-background-container {
+    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/TP-Screenshot7.png);
 }
 
 .game-header-container {
@@ -578,7 +591,9 @@ footer p {
     font-weight: bolder;
 }
 
-.AW-logo {
+.AW-logo,
+.Patho-logo,
+.TH-logo {
     margin-top: 5rem;
     width: 600px;
     height: auto;
