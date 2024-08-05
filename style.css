@@ -289,6 +289,13 @@ section:nth-child(even){
     margin-bottom: 3rem;
 }
 
+.about-upper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
 .about-containers {
     gap: 2rem;
     display: flex;
@@ -341,6 +348,12 @@ section:nth-child(even){
 .section-container {
     gap: 4rem;
     height: 80%;
+}
+
+#about .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .section_pic-container {
