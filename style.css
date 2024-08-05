@@ -474,8 +474,7 @@ article .icon {
     display: flex;
     justify-items: center;
     flex-direction: column;    
-    transition: border 500ms;    
-    transition: background-color 400ms;
+    transition: all ease 400ms;
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
 }
