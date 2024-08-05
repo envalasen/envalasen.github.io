@@ -285,6 +285,8 @@ section:nth-child(even){
 
 #about {
     position: relative;
+    height: fit-content;
+    margin-bottom: 3rem;
 }
 
 .about-containers {
@@ -320,6 +322,22 @@ section:nth-child(even){
     text-align: center;
 }
 
+#about .details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.details-title-container {
+    height: 25%;
+}                         
+.details-description-container {
+    height: 75%;
+    align-content: center;
+    gap: 2rem;
+}
+
+
 .section-container {
     gap: 4rem;
     height: 80%;
@@ -329,6 +347,19 @@ section:nth-child(even){
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.about-text-container {
+    text-align: justify;
+}
+
+.about-text-container a {
+    color: black;
+    text-decoration: underline;    
+    text-underline-offset: 0.1rem;
+}
+.about-text-container a:hover {
+    color: grey;
 }
 
 
@@ -378,6 +409,11 @@ article .icon {
     width: 100%;
 }
 
+.hard-skills-container,
+.soft-skills-container {
+    height: 56vh;
+}
+
 .soft-skills-container article{
     align-items: center;
     width: 15rem;
@@ -415,7 +451,9 @@ article .icon {
 /* GAMES SECTION */
 
 #games {
-    position: relative;
+    position: relative;    
+    height: fit-content;
+    margin-bottom: 3rem;
 }
 
 .color-container {
