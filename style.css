@@ -17,11 +17,15 @@ body {
 }
 
 #AW-body {
-    background-color: rgb(192, 203, 209);
+    background-color: rgb(177, 164, 181);
 }
 
 #Pathogenesis-body {
     background-color: rgba(104, 8, 8, 0.5);
+}
+
+#TH-body {    
+    background-color: rgb(192, 203, 209);
 }
 
 html {
@@ -600,11 +604,13 @@ footer p {
 }
 
 
-/* AARD AND WYZZ */
+/* GAMES OWN PAGES */
 
 .game-container {    
     display: flex;
+    position: relative;
     height: 100%;    
+    min-height: fit-content;
     background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
     url(./assets/ardwiz.png);
     background-size: cover;
@@ -612,19 +618,21 @@ footer p {
 
 .patho-background-container {
     background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/Pathogenesis\ -\ Screenshot1.png);
+    background-size: cover;
 }
 
 .th-background-container {
     background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/TP-Screenshot7.png);
+    background-size: cover;
 }
 
 .game-header-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding-left: 7.5rem;
-    width: 100%;
+    width: fit-content;
     height: 100%;
 }
 
@@ -645,7 +653,7 @@ footer p {
 .Patho-logo,
 .TH-logo {
     margin-top: 5rem;
-    width: 600px;
+    width: 500px;
     height: auto;
 }
 
@@ -665,7 +673,8 @@ footer p {
 
 .game-full-description,
 .game-features {
-    margin: 8rem 8rem 5rem 8rem;
+    margin: 5rem 8rem 2rem 8rem;
+    text-align: justify;
 }
 
 .game-trailer {
@@ -724,12 +733,13 @@ footer p {
     height: 1rem;
     border-radius: 50%;
     background-color: white;
-    opacity: 0.75;
+    opacity: 0.5;
     transition: opacity ease 300ms;
 }
 
-.slider-nav a:hover {
-    opacity: 1;
+.slider-nav a:hover,
+.active-slide {
+    opacity: 1 !important;
 }
 
 .slider::-webkit-scrollbar {
@@ -770,6 +780,11 @@ footer p {
 }
 
 .down-arrow-container {
+    position: absolute;
+    bottom: 1.5rem;
+    
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     width: 75px;
     height: 75px;
@@ -793,4 +808,56 @@ footer p {
     width: 100%;
     height: auto;
     fill: white;
+}
+
+.game-features ul{
+    margin-left: 2rem;
+    list-style-image: url(./assets/bx-radio-circle-marked.svg);
+}
+
+.game-features p {
+    /* display: inline-flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.bullet-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+}
+
+.game-screenshot {
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1.5rem;
+}
+
+.play-now-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0 5rem;
+}
+
+.play-now-text {
+    width: 600px;
+    text-align: justify;
+}
+
+.play-now-text h1 {
+    color: white;
+    font-size: 56px;
+    text-align: left;
+}
+
+.play-now-text p {
+    width: 560px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.play-now-btn-container {
+    width: 200px;
 }

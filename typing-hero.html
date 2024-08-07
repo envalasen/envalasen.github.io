@@ -158,22 +158,72 @@
                     <!-- <box-icon name='right-arrow-alt' class="next" color="#ffffff" onclick="nextSlide()"></box-icon>
                     <box-icon name='left-arrow-alt' class="prev" color="#ffffff" onclick="prevSlide()"></box-icon> -->
 
-                    <a href="#slide-1" class="active" id="1"></a>
-                    <a href="#slide-2" id="2"></a>
-                    <a href="#slide-3" id="3"></a>
-                    <a href="#slide-4" id="4"></a>
-                    <a href="#slide-5" id="5"></a>
-                    <a href="#slide-6" id="6"></a>
-                    <a href="#slide-7" id="7"></a>
-                    <a href="#slide-8" id="8"></a>
+                    <a href="#slide-1" class="active-slide"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
                 </div>
             </div>
+        </div>
+        <div class="play-now-container">
+            <div class="play-now-text">
+                <h1>Play now on Itch.io!</h1>
+                <p>
+                    <u style="text-decoration-thickness: 2.5px;">Disclaimer:</u> This game is currently only local coop, hence two users are required to play on the same system
+                    and at least one controller is needed.
+                </p>
+            </div>
+            <div class="btn-container steam-btn-container play-now-btn-container">
+                <button class="steam-btn"
+                    onclick="location.href='https://store.steampowered.com/app/2984220/Aard_and_Wyzz_The_rise_of_minions/'"
+                > 
+                <!-- <img
+                    src="./assets/bxl-steam.svg"
+                    alt="Steam Icon"
+                    class="steam-icon"
+                /> -->
+                    <box-icon name='steam' type='logo' color='#ffffff' class="steam-icon"></box-icon>
+                    Steam
+                </button>
+            </div>     
         </div>
     </div>
     <footer>
         <p>Copyright &#169; 2024 Enrique Val Asensio. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+            
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.slider-nav a');
+            const slider = document.querySelector('.slider');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    // Prevenir el comportamiento predeterminado del enlace
+                    event.preventDefault();
+
+                    // Eliminar la clase "active-slide" de todos los enlaces
+                    navLinks.forEach(nav => nav.classList.remove('active-slide'));
+
+                    // Agregar la clase "active-slide" al enlace clicado
+                    link.classList.add('active-slide');
+
+                    // Cambiar a la imagen correspondiente
+                    const slideId = link.getAttribute('href').substring(1); // Obtener el ID de la imagen
+                    const slideElement = document.getElementById(slideId);
+
+                    // Mover el slider a la imagen correspondiente
+                    slider.scrollLeft = slideElement.offsetLeft;
+                });
+            });
+        });
+
+    </script>
     <!--
     <script>
         $(document).ready(function(){
