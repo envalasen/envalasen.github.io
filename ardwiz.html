@@ -98,7 +98,7 @@
         <div class="game-full-description">
             <h1 class="game-section-title">DESCRIPTION</h1>
             <p>
-                <i>Aard and Wyzz: The Rise of Minions</i> is an action/adventure <b>local coop</b> game, where you will play as the two split personalities of the ruthless tyrant Ardwiz.
+                <i>Aard and Wyzz: The Rise of Minions</i> is an action/adventure <b>local coop</b> game developed in Unreal Engine 5.2, where you will play as the two split personalities of the ruthless tyrant Ardwiz.
                 <br/>
                 Aard is the extrovert, brave, head-first-into-action part of Ardwiz. He represents his physical strength, hence his attacks are melee "magical" punches
                  which the player will use to beat his enemies and move certain interactable items.
@@ -139,13 +139,10 @@
                                 As previously mentioned, you will have to choose to play Aard (melee combat) or Wyzz (ranged combat). Each character can use a quick sequence of attacks to do a combo with unique animations. 
                                 If the attack button is held long enough, a heavy attack will be launched that will come handy for a diverse 
                                 variety of puzzles and hell the players get pass their enemies.
-
-                                <br/>
-                                <br/>
                                 
                             </p>                        
                             <img
-                                    src="./assets/a&w - screenshot 2.png"
+                                    src="./assets/AW-Puzzles.png"
                                     width="960" height="540"
                                     class="game-screenshot"
                                 />
@@ -173,6 +170,11 @@
                                 current actions, due to the fact that she will deliver different attacks depending if the players 
                                 are solving some boss-fight puzzles or trying to dodge certain attacks.
                             </p>
+                            <img
+                                    src="./assets/AW-Karen.png"
+                                    width="960" height="540"
+                                    class="game-screenshot"
+                                />
                         </div>
                     </li>
 
@@ -202,6 +204,11 @@
                                 Players are in dire need of communicating and cooperating more than ever, because they have to 
                                 play as one single mind.
                             </p>
+                            <img
+                                    src="./assets/AW-Ardwiz.jpg"
+                                    width="960" height="540"
+                                    class="game-screenshot"
+                                />
                         </div>
                     </li>
                     <li>
@@ -217,6 +224,11 @@
 
                                 All enemies also know how to reposition accordingly after attacking, getting flanked or being attacked.
                             </p>
+                            <img
+                                    src="./assets/AW-Combat2.png"
+                                    width="960" height="540"
+                                    class="game-screenshot"
+                                />
                         </div>
                     </li>
                     <li>
@@ -226,17 +238,21 @@
                                 I also got to learn how to make shaders from scratch, like a shader that represents how 
                                 damaged an enemy is, a dissolve shader for enemies dying and another dissolve shader for 
                                 some destructible vines.
+
+                                <br/>
+                                
+                                On top of that, I implented 120+ SFX and many soundtracks with a certain adaptative 
+                                factor (when going into conmbat, the music changes) using the <b>FMOD Studio software</b>.
                             </p>
                         </div>
                     </li>
 
                     <li>
                         <div class="bullet-point" style="margin-bottom: 0;">
-
                             <p>
-                                And much more! Like interactables, simulating physics for movable boxes 
-                                (not using the Unreal built-in physics), friendly fire with unique animations, 
-                                original soundtrack and many many SFX and VFX.
+                                And much, much more! Like interactables, simulating physics for movable boxes 
+                                (not using the Unreal built-in physics), "friendly fire" with unique animations, 
+                                aiming-assitance system, dynamic camera and many VFX.
                             </p>
                         </div>
                     </li>
@@ -269,7 +285,7 @@
                     <img
                         id="slide-5"
                         class="slide"
-                        src="./assets/A&W - Screenshot 5.png"
+                        src="./assets/AW-Ardwiz2.png"
                     />
                     <img
                         id="slide-6"
@@ -279,7 +295,7 @@
                     <img
                         id="slide-7"
                         class="slide"
-                        src="./assets/A&W - Screenshot 7.png"
+                        src="./assets/AW-KarenCombat.png"
                     />
                     <img
                         id="slide-8"
@@ -303,26 +319,35 @@
             </div>
         </div>
         <div class="play-now-container">
-            <div class="play-now-text">
-                <h1>Play now on Steam!</h1>
-                <p>
-                    <u style="text-decoration-thickness: 2.5px;">Disclaimer:</u> This game is currently only local coop, hence two users are required to play on the same system
-                    and at least one controller is needed.
-                </p>
+            <div>                    
+                <img
+                src="./assets/LOGO_AARDWYZZ_INVERTIDO.png"
+                alt="Aard and Wyzz Logo"
+                width="300px" height="auto"
+            />
             </div>
-            <div class="btn-container steam-btn-container play-now-btn-container">
-                <button class="steam-btn"
-                    onclick="location.href='https://store.steampowered.com/app/2984220/Aard_and_Wyzz_The_rise_of_minions/'"
-                > 
-                <!-- <img
-                    src="./assets/bxl-steam.svg"
-                    alt="Steam Icon"
-                    class="steam-icon"
-                /> -->
-                    <box-icon name='steam' type='logo' color='#ffffff' class="steam-icon"></box-icon>
-                    Steam
-                </button>
-            </div>     
+            <div class="play-now">
+                <div class="play-now-text">
+                    <h1>Play now on Steam!</h1>
+                    <p>
+                        <u style="text-decoration-thickness: 2.5px;">Disclaimer:</u> This game is currently only local coop, hence two users are required to play on the same system
+                        and at least one controller is needed.
+                    </p>
+                </div>
+                <div class="btn-container steam-btn-container play-now-btn-container">
+                    <button class="steam-btn"
+                        onclick="location.href='https://store.steampowered.com/app/2984220/Aard_and_Wyzz_The_rise_of_minions/'"
+                    > 
+                    <!-- <img
+                        src="./assets/bxl-steam.svg"
+                        alt="Steam Icon"
+                        class="steam-icon"
+                    /> -->
+                        <box-icon name='steam' type='logo' color='#ffffff' class="steam-icon"></box-icon>
+                        Steam
+                    </button>
+                </div>  
+            </div>               
         </div>
     </div>
     <footer>

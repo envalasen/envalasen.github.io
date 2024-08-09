@@ -815,18 +815,17 @@ footer p {
     list-style-image: url(./assets/bx-radio-circle-marked.svg);
 }
 
-.game-features p {
-    /* display: inline-flex;
-    flex-direction: column;
-    align-items: center; */
-}
-
 .bullet-point {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
 
+.bullet-point p {
+    
+    text-align: justify;
 }
 
 .game-screenshot {
@@ -837,8 +836,16 @@ footer p {
 .play-now-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 3rem 0 5rem;
+    align-items: center;
+    gap: 10rem;
+    padding: 3rem 0 5rem;
+    background-color: rgb(0,0,0,0.3);
+}
+
+.play-now {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
 }
 
 .play-now-text {
@@ -854,6 +861,7 @@ footer p {
 
 .play-now-text p {
     width: 560px;
+    color: rgb(216, 216, 216);
     font-weight: bold;
     font-size: 14px;
 }
