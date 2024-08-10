@@ -21,7 +21,7 @@ body {
 }
 
 #Pathogenesis-body {
-    background-color: rgba(104, 8, 8, 0.5);
+    background-color: rgba(104, 8, 8, 0.3);
 }
 
 #TH-body {    
@@ -777,6 +777,11 @@ footer p {
 .steam-icon {
     width: 50px;
     height: auto;
+}
+
+.itch-icon {
+    width: 50px;
+    filter: invert(100%);
 }
 
 .down-arrow-container {
