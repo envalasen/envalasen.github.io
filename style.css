@@ -460,6 +460,11 @@ article .icon {
     text-align: justify;
 }
 
+.recommendation-letter {
+    width: 750px;
+    height: 900px;
+}
+
 .pdf-icon {
     width: 100px;
     height: auto;
@@ -842,7 +847,9 @@ footer p {
     text-decoration-color: white;
 }
 
-.game-screenshot {
+.game-screenshot {    
+    width: 960px;
+    height: 540px;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 1.5rem;
 }
@@ -883,4 +890,14 @@ footer p {
 .play-now-btn-container {
     width: 200px;
     max-height: 60px;
+}
+
+.AW-play-logo {
+    width: 300px;
+    height: auto;
+}
+
+.Patho-play-logo {
+    width: 500px;
+    height: auto;
 }
