@@ -147,6 +147,7 @@
 
     footer {
         /* width: 100vh; */
+        height: fit-content;
     }
     footer nav {
         height: fit-content;
