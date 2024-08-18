@@ -329,4 +329,10 @@
         height: fit-content;
         border-radius: 1.5rem;
     }
+    .recommendation-title {
+        font-size: 30px;
+    }
+    .recommendation-letter {
+        height: 60vh;
+    }
 }

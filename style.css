@@ -473,6 +473,17 @@ article .icon {
     height: 900px;
 }
 
+.letter-download {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.letter-download:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .pdf-icon {
     width: 100px;
     height: auto;
