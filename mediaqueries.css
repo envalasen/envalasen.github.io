@@ -162,6 +162,9 @@
     .experience-details-container {
         align-items: center;
     }
+    .recommendation-letter {
+        display: none;
+    }
     .about-containers {
         margin-bottom: 0;
     }
@@ -227,6 +230,13 @@
         font-size: 50px;
     }
 
+    
+    .down-arrow-container {
+        width: 20px;
+        height: 20px;
+        bottom: 1.5rem;
+    }
+
     .trailer,
     .game-screenshot,
     .slider-wrapper {    
@@ -234,6 +244,7 @@
         height: 315px;
     }
     .play-now-container {
+        padding: 1.5rem 0 3rem;
         gap: 1rem;
         width: 100vw;
     }
@@ -302,6 +313,11 @@
         font-size: 6px;
         width: 26vh;
     }
+
+    .game-full-description, .game-features {
+        margin: 2rem;
+    }
+    
 }
 
 @media (max-width: 500px) {
@@ -324,15 +340,9 @@
     .play-now-btn-container {
         margin-top: 0;
     }
-    .steam-btn {
-        width: 75px;
-        height: fit-content;
-        border-radius: 1.5rem;
-    }
+
     .recommendation-title {
         font-size: 30px;
     }
-    .recommendation-letter {
-        height: 60vh;
-    }
+    
 }
