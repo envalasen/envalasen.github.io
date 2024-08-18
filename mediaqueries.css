@@ -1,4 +1,7 @@
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
     #profile {
         /* height: 83vh; */
         margin-bottom: 6rem;
@@ -7,7 +10,10 @@
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
     #desktop-nav {
         display: none;
     }
@@ -108,14 +114,13 @@
         text-align: justify;
     }
 
-    .game-trailer iframe,
-    .slider-wrapper {
-        width: 560px;
-        height: 315px;
-    }
+
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
+    .container {
+        max-width: 700px;
+    }
     section {        
         /* width: 100vh; */
         padding: 2.5rem;
@@ -222,11 +227,12 @@
         font-size: 50px;
     }
 
-    .game-screenshot {    
+    .trailer,
+    .game-screenshot,
+    .slider-wrapper {    
         width: 560px;
         height: 315px;
     }
-
     .play-now-container {
         gap: 1rem;
         width: 100vw;
@@ -266,5 +272,61 @@
 
     .itch-icon {
         width: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .trailer,
+    .game-screenshot,
+    .slider-wrapper {    
+        width: 360px;
+        height: 202.5px;
+    }
+    .slider-nav a {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    .AW-play-logo {
+        width: 100px;
+    }
+    .Patho-play-logo {
+        width: 150px;
+    }
+
+    .play-now-text h1 {
+        font-size: 20px;
+    }
+    .play-now-text p {
+        font-size: 6px;
+        width: 26vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .game-section-title {
+        font-size: 30px;
+    }
+    .Patho-play-logo {
+        width: 100px;
+    }
+    .play-now-text h1 {
+        font-size: 16px;
+    }
+    .play-now-text p {
+        font-size: 5px;
+        width: 20vh;
+    }
+    .itch-icon {
+        width: 20px;
+    }
+    .play-now-btn-container {
+        margin-top: 0;
+    }
+    .steam-btn {
+        width: 75px;
+        height: fit-content;
+        border-radius: 1.5rem;
     }
 }
