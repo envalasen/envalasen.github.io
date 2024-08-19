@@ -364,3 +364,15 @@
         font-size: 8px;
     }
 }
+
+@media (max-width: 400px) {
+    .contact-info-container p {
+        font-size: 12px;
+    }
+    .email-icon {
+        height: 1.5rem;
+    }
+    .icon {
+        height: 1rem;
+    }
+}
