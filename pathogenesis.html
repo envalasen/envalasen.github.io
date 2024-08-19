@@ -126,7 +126,7 @@
                 <br/>
                 
                 I had the chance to work not only as a game programmer (implementing AI, interactable features, game systems and SFX), but also as 
-                the main producer of the team. I organized the team, the meetings, all the tasks to do (using <i>HacknPlan</i>), 
+                the <b>main producer</b> of the team. I organized the team, the meetings, all the tasks to do (using <i>HacknPlan</i>), 
                 contacted some outsourcing and onboarded them, as well as created some trackers.
 
                 <br/>
@@ -164,7 +164,71 @@
 
                 They serve as a <b>rock/paper/scissors</b> system, due to the fact that each one of them is strong against another organism, but weak against another one. 
                 This will also be the key of solving puzzles in many ocasions.
+
+                <br/>
+                <br/>
+
+                There are three hostile organisms (apart from the virus):
+
+                <br/>
+                <br/>
+
+                <ul>
+                    <li>
+                        <div class="bullet-point">
+                            <p>                                
+                                <b>Photonic Organism:</b> It's a great threat at long distances, thanks to its ability to detect organism from a certain range 
+                                and destroy them with its photonic shot. It alos has a huge vertical jump to get to those high positions to keep its advantage.
+
+                                <br/>
+                                <br/>
+
+                                I got to work on this enemy: its <i>locomotion</i> (movement, jump, aim), its AI and its attack.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet-point">
+                            <p>                                
+                                <b>Electric Organism:</b> This enemy is able to float over many obstacles, also allowing it to cover huge horizontal distances.
+                                When it detects an organism nearby, it will aggresively follow it emitting a constant electric shock that will kill enemy organism it comes into contact.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet-point">
+                            <p>                                
+                                <b>Crystalline Organism:</b> This organism will just chill haning on the walls and ceilings with its ability to climb any surface. 
+                                It will always protect itself from any harm coming from the Photonic Organism thanks to its crystalline surface, which it can aim and 
+                                deflect any photonic shots coming its way.
+
+                                <br/>
+                                <br/>
+                                I coded its AI with a threat priority system, making it able to detect any Photonic Organism from a certain range while there are no other organisms getting 
+                                nearby. If there are any other organisms getting close to it, it will come for them, chasing them and, when close enough, stabbing them with its crystalline blade.
+                        </div>
+                    </li>
+                </ul>
             </p>
+            <p>          
+                If the virus is able to come into contact with any of these organisms, it will possess them, gaining their abilites. To visualize this, I worked on a shader that will 
+                progressively spawn grey veins from the inside and, eventually, cover the entirety of the organism. It will also progressively change color, zoom in and shake the camera 
+                and the controller to feel the full power of the virus.
+
+                <br/>
+                <br/>
+
+                I also worked on some game systems, such as a checkpoint system that saves the state of the player, the enemies, and every moving platform to ensure the player respawns in the exact same location and 
+                with the exact same interactions they made.
+
+                <br/>
+                <br/>
+
+                And much more! I got to work on UI, SFX and interactable components for puzzles.
+
+
+            </p>
+            
         </div>
         <div class="features-slider-container">
             <div class="slider-wrapper">
@@ -260,7 +324,13 @@
         </div>
     </div>
     <footer>
-        <p>Copyright &#169; 2024 Enrique Val Asensio. All rights reserved.</p>
+        <p>Copyright &#169; 2024 Enrique Val Asensio. All rights reserved.</p> 
+        <div class="footer-social-container">
+            <box-icon name='envelope' color='#ffffff' class="social-icon" onclick="location.href='mailto:val.asensio.enrique@gmail.com'"></box-icon>
+            <box-icon name='linkedin-square' type='logo' color='#ffffff' class="social-icon" onclick="location.href='https://linkedin.com/in/enrique-val-asensio-868226237/'"></box-icon>            
+            <box-icon type='logo' name='discord-alt' color='#ffffff' class="social-icon" onclick="location.href='https://discordapp.com/channels/@me/neko119/'"></box-icon>
+            <box-icon name='github' type='logo' color='#ffffff' class="social-icon" onclick="location.href='https://github.com/envalasen'"></box-icon>
+        </div>
     </footer>
     <script src="script.js"></script>
     <script>
