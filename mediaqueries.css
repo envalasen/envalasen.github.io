@@ -169,6 +169,12 @@
     .recommendation-letter {
         display: none;
     }
+    .recommendation-text {
+        display: none;
+    }
+    .recommendation-text-mobile {
+        display: block;
+    }
     .about-containers {
         margin-bottom: 0;
     }

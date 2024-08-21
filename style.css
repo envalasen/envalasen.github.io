@@ -477,6 +477,14 @@ article .icon {
     height: 900px;
 }
 
+.recommendation-text-mobile {
+    display: none;
+}
+
+.recommendation-text,
+.recommendation-text-mobile {
+    text-align: justify;
+}
 .letter-download {
     color: inherit;
     font-weight: bold;
@@ -882,6 +890,7 @@ footer p {
 
 .bullet-point a {
     color: rgb(85, 85, 85);
+    text-decoration: underline;
     text-underline-offset: 0.25rem;
 }
 .bullet-point a:hover {
