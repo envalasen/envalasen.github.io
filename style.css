@@ -302,7 +302,7 @@ section:nth-child(even){
 #about {
     position: relative;
     height: fit-content;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .about-upper-container {
